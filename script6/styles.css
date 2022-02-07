@@ -1,0 +1,12 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: grey;
+}
+
+#main-title {
+    text-align: center;
+}
+
+.class {
+    margin-bottom: 12px;
+}
