@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+
+<body>
+    <!-- Create input form using the type text > placeholder displays msg prompting user -->
+    <input id="name-input" type="text" placeholder="Enter your name" />
+
+    <!-- Create clickable button using button tag > displays msg inside button for user -->
+    <button id="my-button">Click Me</button>
+
+    <!-- Embed JavaScript code within the HTML using script tag instead of an external JS file -->
+    <script>
+
+        // Create a variable that will go through the DOM and grab the ID my-button if it exists (if not, return null)
+        var myButton = document.querySelector('#my-button');
+
+        // Create a variable that will go through the DOM and grab the ID name-input if it exists  (if not, return null)
+        var nameInput = document.querySelector('#name-input');
+
+        // Add an event listener function that will be ran whenever the button is clicked
+        myButton.addEventListener('click', function () {
+            
+            // If whatever the user put inside the input text isn't empty
+            if (nameInput.value !== '') {
+
+                // Pop up an alert box in the browser that displays a message calling back user's input value from the text form
+                alert('Hello ' + nameInput.value);
+            }
+            // Otherwise, this function won't execute even if user clicks on button
+        });
+    </script>
+    <!-- End of script tag. Anything after will be HTML again -->
+
+    <p>Hello</p>
+</body>
+
+</html>
